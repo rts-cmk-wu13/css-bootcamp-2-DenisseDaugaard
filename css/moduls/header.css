@@ -1,14 +1,16 @@
 nav ul{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-ul.header__main__nav{
-    justify-content: space-between; 
+ul.header__main__nav li.header__grup{
+    margin-inline: 0.5rem;
 }
+
+
 
 .header__small__nav{
     justify-content: center;
     gap: 1rem;
 }
+

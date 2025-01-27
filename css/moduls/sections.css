@@ -1,0 +1,50 @@
+.abbonement {
+    grid-column:3;
+}
+
+.jakob__img__container{
+    width: 4rem;
+    display: flex;
+}
+.jakob__img__container img{
+   border-radius: 50%;
+}
+
+.uland__bold-text{
+    font-weight: bold;
+    margin: 1rem 0 0.5rem 0;
+    text-wrap: nowrap;
+
+}
+
+.twitter__icon{
+    display: inline-block;
+    width: calc(50% - 2px);
+}
+
+
+.fik-du_læst:not(.red__text){
+    display: flex;
+    gap: 0.5rem;
+}
+ 
+.fik-du_læst__container__img{
+   aspect-ratio: 16/9;
+   width: 10rem;
+}
+
+
+
+.information__sect{
+    grid-column: 3;
+}
+.information__sect__cards{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 0.5rem;
+}
+
+.information__sect figure {
+    aspect-ratio: 16/9;
+    width: 15rem;
+}

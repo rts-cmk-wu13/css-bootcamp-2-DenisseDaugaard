@@ -2,9 +2,9 @@
     display: grid; 
     grid-template-columns: 
     [fullw-start]1fr
-    [content-start]15rem 1fr[content-end] 
+    [content-start]20rem 45rem[content-end] 
     1fr[fullw-end];
-    gap: 1rem;
+    gap: 2rem;
 }
 
 header, main, footer{
@@ -31,4 +31,19 @@ footer>*{
 .full-width{
     grid-column: 1 / -1;
     display: block;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+.red__text{
+    color: red;
+    margin-bottom: 1rem;
+}
+
+hr {
+    color: blueviolet;
+    height: 0;
+    border: none;
 }
