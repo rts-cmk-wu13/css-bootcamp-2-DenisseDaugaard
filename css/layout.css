@@ -1,0 +1,49 @@
+.wrapper{
+    display: grid; 
+    grid-template-columns: 
+    [fullw-start]1fr
+    [content-start]20rem 45rem[content-end] 
+    1fr[fullw-end];
+    gap: 2rem;
+}
+
+header, main, footer{
+    grid-column: fullw;
+    display: grid;
+    grid-template-columns: subgrid; 
+    /* this means that insted of making a new grid, we reuse the same one */
+}
+
+header>*,
+main>*,
+footer>*{
+   grid-column: content; 
+   display: grid;
+   grid-template-columns: subgrid;
+}
+
+.no-columns {
+    grid-column: content;
+    display: block;
+}
+
+
+.full-width{
+    grid-column: 1 / -1;
+    display: block;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+.red__text{
+    color: red;
+    margin-bottom: 1rem;
+}
+
+hr {
+    color: blueviolet;
+    height: 0;
+    border: none;
+}
